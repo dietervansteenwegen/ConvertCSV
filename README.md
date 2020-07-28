@@ -1,2 +1,1 @@
-# ConvertCSV
-Converts a CSV: colums separator from semicolon to comma, decimal symbol from comma to point
+Converts a CSV: colums separator from comma to semicolon, decimal symbol from point to comma

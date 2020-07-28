@@ -1,7 +1,7 @@
 """
 Dieter Vansteenwegen (vansteenwegen.org)
 MIT License
-Converts a CSV: colums separator from semicolon to comma, decimal symbol from comma to point
+Converts a CSV: colums separator from comma to semicolon, decimal symbol from point to comma
 """
 
 import sys  # access to arguments
@@ -24,8 +24,8 @@ try:
             outputFileName = i+'.csv'
             with open(outputFileName, 'w') as output:
                 for line in input:
-                    line = line.replace(',', '.')
-                    line = line.replace(';', ',')
+                    line = line.replace(',', ';')
+                    line = line.replace('.', ',')
                     output.write(line)
                 filesCreated.append(outputFileName)
 
